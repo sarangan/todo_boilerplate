@@ -31,3 +31,15 @@
     transform: rotate(360deg);
   }
 }
+
+.main-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  max-width: 1024px;
+  margin: auto 50px;
+}
+
