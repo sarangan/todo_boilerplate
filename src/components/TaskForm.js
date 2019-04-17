@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from "react";
+import React, {Fragment, useState, useEffect} from "react";
 import {connect} from 'react-redux';
 import {addTodo} from '../actions/todoActions';
 
@@ -11,6 +11,10 @@ const TaskForm = (props) =>{
         props.addTodo(task)
 
     }
+
+    useEffect(() => {
+        console.log("calling effect");
+    });
 
     return(
         <Fragment>
